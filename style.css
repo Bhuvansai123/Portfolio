@@ -1215,3 +1215,27 @@ footer p {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* --- PASTE THIS AT THE VERY BOTTOM OF STYLE.CSS --- */
+
+@media screen and (max-width: 600px) {
+  
+  /* This targets the Contact Section on Mobile Phones */
+  #contact {
+    /* 1. Stop vertical centering so it doesn't push off-screen */
+    justify-content: flex-start !important;
+    
+    /* 2. Add HUGE padding at the bottom so you can scroll past the address bar */
+    padding-bottom: 150px !important; 
+    
+    /* 3. Let the height grow naturally */
+    height: auto !important;
+    min-height: 100vh;
+  }
+
+  /* Reduce gaps so it fits better on small screens */
+  .contact-wrapper {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}

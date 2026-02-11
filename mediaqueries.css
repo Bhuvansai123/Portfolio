@@ -178,18 +178,20 @@
   top: 100%;
   right: 0;
   background-color: white;
-  width: 100%;
-  max-height: 0; /* Hidden */
+  
+  /* FIXED LINE BELOW: Changed from 100% to 100vw */
+  width: 100vw; /* This forces it to be as wide as the screen */
+  
+  max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem; /* Space between links */
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  list-style: none; /* Removes bullets */
+  align-items: center; /* Centers the text */
+  gap: 2rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  z-index: 100; /* Ensures it sits on top of profile pic */
 }
-
 /* When the 'open' class is added by JS, show the menu */
 #hamburger-nav .menu-links.open {
   max-height: 400px; /* Expands to show content */
