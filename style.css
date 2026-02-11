@@ -138,7 +138,15 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  /* Allow the menu to grow as tall as the screen */
+  max-height: 100vh; 
+  
+  /* Enable scrolling if the list is too long */
+  overflow-y: auto;
+  
+  /* Add some spacing */
+  padding-bottom: 2rem;
+  border-top: 1px solid #ddd;
 }
 
 .hamburger-icon.open span:first-child {
