@@ -11,7 +11,7 @@
 
   <body>
     <!-- Desktop Nav -->
-  \<nav id="desktop-nav">
+  <nav id="desktop-nav">
   <div class="logo">BSA</div>
   <div>
     <ul class="nav-links">
@@ -644,6 +644,15 @@
   }
 </script>
 </body>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+</script>
 
   <footer>
     <p>Copyright &#169; 2026 Bhuvan Sai Anusuri. All Rights Reserved.</p>
