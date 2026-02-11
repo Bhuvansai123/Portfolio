@@ -1247,3 +1247,32 @@ footer p {
     margin-bottom: 2rem;
   }
 }
+
+/* --- FORCE MENU FIX (Paste at bottom of style.css) --- */
+
+.menu-links.open {
+  /* 1. Force the menu to be as tall as the screen */
+  max-height: 100vh !important;
+  height: 100vh !important;
+  
+  /* 2. Force it to be wide enough */
+  width: 100vw !important; /* Full width of phone */
+  right: -2rem !important; /* Pull it slightly right to cover edges if needed */
+  
+  /* 3. Force scrolling so you can reach the bottom links */
+  overflow-y: scroll !important;
+  
+  /* 4. Add big padding at the bottom so "Contact" isn't hidden behind phone bars */
+  padding-bottom: 150px !important;
+  
+  /* 5. Ensure background is solid */
+  background-color: white !important;
+  z-index: 9999 !important; /* Sit on top of everything */
+}
+
+/* Optional: Make the text bigger and easier to tap */
+.menu-links.open li a {
+  font-size: 1.5rem !important;
+  display: block !important;
+  padding: 15px 0 !important;
+}
